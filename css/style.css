@@ -1,12 +1,13 @@
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     font-weight: 300;
     color: #ebebeb;
+    background-image: url("../img/background-img.png");
 }
 
 #page {
-    background-image: url("../img/background-img.png");
+    
     width: 100%;
 }
 
@@ -17,7 +18,7 @@ body {
     -moz-box-shadow:0px 2px 4px #999;
     box-shadow:0px 2px 4px #999;
     width: 100%;
-    position: relative;
+    position: fixed;
     top: 0;
 }
 
@@ -41,11 +42,19 @@ header, footer {
     background: #008080;
     height: 80px;
     line-height: 80px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
 /***************** NAVIGATION *****************/
 
+#mainnav ul li a.noborder {
+    border-right: none;
+
+}
+
+.bold {
+    font-weight: 700;
+}
 
 #navigation {
     position: relative;
@@ -60,6 +69,7 @@ header, footer {
 
 #mainnav ul li {
     float: left;
+    
 }
 
 #mainnav ul li a {
@@ -70,12 +80,21 @@ header, footer {
     font-size: 20px;
     padding: 80px 12px;
     line-height: 80px;
+    border-right: 1px solid #000;
+    transition: all 1s;
+    opacity: 1;
 }
+
+.border {
+    border-right: 1px solid #000;
+}
+
 
 #mainnav ul li a:hover {
     background: #008080;
     color: #fff;
     height: 80px;
+    opacity: .8;
 }
 
 /****************** ABOUT ME ************/
@@ -85,7 +104,7 @@ header, footer {
     background: #fff;
     padding: 30px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 150px;
     margin-bottom: 70px;
 }
 
@@ -125,7 +144,7 @@ hr {
     background: #fff;
     padding: 30px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 150px;
     margin-bottom: 70px;
 }
 
